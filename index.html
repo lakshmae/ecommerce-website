@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Store</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>eCommerce Store</h1>
+    </header>
+    <nav>
+        <div class="left">
+            <img src="fake1.png" alt="Logo"> 
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="#">All</a>
+            <a class="nav-link" href="#">Fresh</a>
+            <a class="nav-link" href="#">Sell</a>
+            <a class="nav-link" href="#">Best Sellers</a>
+            <a class="nav-link" href="#">Mobiles</a>
+            <a class="nav-link" href="#">Customer Service</a>
+            <a class="nav-link" href="#">Prime</a>
+            <a class="nav-link" href="#">Electronics</a>
+            <a class="nav-link" href="#">Fashion</a>
+            <a class="nav-link" href="#" onclick="showWishlist()">Wishlist</a> 
+            <a class="nav-link" href="#" onclick="toggleCart()">Cart</a> 
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <div id="products-container"></div>
+
+    <div id="cart" style="display:none;">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <div id="wishlist" style="display:none;">
+        <h2>Wishlist</h2>
+        <ul id="wishlist-items"></ul>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 eCommerce Store</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
